@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevOps Assignment 3 - FA23-BCT-018</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      width: 420px;
+      box-shadow: 0 8px 25px #0002;
+      text-align: center;
+    }
+    h1 { color: #2563eb; }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 80%;
+    }
+    button {
+      padding: 11px 20px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    p { color: #334155; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="heading">DevOps CI/CD Assignment 3</h1>
+    <h2 id="student">Muaaz Ahmed</h2>
+    <p id="roll">FA23-BCT-018</p>
+
+    <button id="greet" onclick="greet()">Click to Greet</button>
+    <p id="message"></p>
+
+    <input type="text" id="userInput" placeholder="Enter your message">
+    <button id="submit" onclick="submitText()">Submit</button>
+    <p id="output"></p>
+  </div>
+
+  <script>
+    function greet() {
+      document.getElementById('message').textContent =
+        'Hello Muaaz! Welcome to DevOps Assignment 3.';
+    }
+
+    function submitText() {
+      document.getElementById('output').textContent =
+        document.getElementById('userInput').value;
+    }
+  </script>
+</body>
+</html>
